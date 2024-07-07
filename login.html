@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In | CMS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" type="image/png" href="logo.jpg"/>
+</head>
+
+<body>
+    <header>
+        <div id="up">
+            <div class="log">
+                <img src="logo.jpg" width="110">
+            </div>
+            
+            <div class="erc">
+                <img src="ecr.jpg" width="550">
+            </div>
+
+            <div class="ashok">
+                <img src="ashok.jpeg" width="55">
+            </div>
+
+            <div class="time">
+                <div class="time1">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="session">AM</span>
+                </div>
+
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <a href="select.html"><i class='fa fa-arrow-circle-left' style="font-size:40px; color: rgb(10, 72, 138); padding-left:10px;padding-top:5px;float:left;"></i></a>
+    <div class="bg-image">
+        <div class="content"> 
+            <h1 style="color:#dfdfeb;"><i class="fas fa-user-circle" style="font-size: 71px; margin-bottom:10px; color:#dfdfeb; "></i><br> LOG IN</h1>
+            <form action="login.php" method="post">
+                <!-- <div class="field"> -->
+                    <label for="adminid"></label>
+                    <input id="ipas" name="adminid" type="text" required placeholder="IPAS ID">
+                <!-- </div> -->
+                <!-- <div class="field"> -->
+                    <label for="password"></label>
+                    <input id="ipas2" name="password" type="password" required placeholder="PASSWORD">
+                <!-- </div> -->
+                <input id="ipas3" type="submit" value="Login" onclick=""/>
+            </form>
+        </div>
+        <!--<div class="logo">
+            <img src="logo.jpg" alt="Logo" >
+        </div>-->
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        function displayTime(){
+            var dateTime = new Date();
+            var hrs = dateTime.getHours();
+            var min = dateTime.getMinutes();
+            var sec = dateTime.getSeconds();
+            var session = document.getElementById('session');
+
+            if(hrs>=12){
+                session.innerHTML='PM';
+            }else{
+                session.innerHTML='AM';
+            }
+
+            if(hrs>12){
+                hrs=hrs-12;
+            }
+
+            document.getElementById('hours').innerHTML = hrs;
+            document.getElementById('minutes').innerHTML = min;
+            document.getElementById('seconds').innerHTML = sec;
+        }
+        setInterval(displayTime,10);
+    </script>
+
+</body>
+</html>
