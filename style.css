@@ -1,0 +1,125 @@
+body{
+    background-image: url(./head.png);
+    background-repeat: no-repeat;
+    background-size: 110% 220%;
+}
+
+header #up{
+    background-image: url(./head.avif);
+    background-repeat: no-repeat;
+    background-size: 120% 175% ;
+    z-index: -1;
+    padding-left: 20px;
+    padding-right: 40px;
+    display: flex;
+    box-shadow: 0px 3px 30px 0px rgba(3, 30, 58, 0.402);
+}
+
+.log .erc{
+    display: inline;
+    display: left;
+}
+
+.log{
+    float: left;
+}
+
+.log img{
+    padding-left: 15px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    opacity: 1;
+    margin-left: 15px;
+ }
+
+
+.erc img{
+    padding-left: 100px;
+    padding-top: 6px;
+    opacity: 1;
+}
+
+.ashok img{
+    margin-top: 5px;
+    margin-left: 560px;
+    opacity: 1;
+}
+
+.time{
+    margin-left: 20px;
+
+}
+
+.time1{
+    margin-left: 25px;
+    margin-top: 5px;
+    padding: 7px;
+    border: 1.5px solid rgb(5, 43, 83);
+    border-radius: 20px;
+    background-color: #eceeef;
+    color: rgb(45, 45, 45);
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.social a{
+    color: rgb(10, 72, 138);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.social a:hover{
+    color: rgb(235, 124, 84);
+}
+
+/*-----------*/
+
+.welcome {
+    margin-top: 15px;
+    text-align: center;
+    box-sizing: initial;
+
+}
+.welcome .welcome1{
+    color: rgba(21, 21, 180, 0.856);
+    font-size: 28px;
+    font-weight: 1000;
+}
+
+.ipas{   
+ margin-top: 20px;
+ font-size: 35px;
+ 
+ line-height: 15px; 
+ color: #12619d;
+}
+
+.button{
+    
+   color:white;
+   font-family: 'Oswald', sans-serif;
+   font-size: 17px;
+   font-weight: 600;
+   background-color: #2234ae;
+   background-image: linear-gradient(0deg, #3a52ed 1%, #130a91 110%);
+   border-radius: 20px;
+   border: none;
+   padding:10px 20px;
+   box-shadow: 0 4px #203794;  
+   margin: 60px 10px 0px 5px;
+
+}
+
+.button:hover{
+    color: azure;
+    font-size: 18px;
+    background-color: #2b42d2;
+   background-image: linear-gradient(0deg, #455dfc 1%, #1508ce 110%);
+    box-shadow: 0 4px #1b0a77;  
+}
